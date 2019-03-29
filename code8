@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(void) 
+{
+int data[8],index[8],head=4,point,i;
+data[0]=50;data[1]=70;data[2]=20;data[3]=60;
+data[4]=10;data[5]=80;data[6]=30;data[7]=40;
+index[0]=3;index[1]=5;index[2]=6;index[3]=1;
+index[4]=2;index[5]=-1;index[6]=7;index[7]=0;
+point=head;
+for(i=0;i<8;i++)
+{
+	printf("data[%d]=%d\n",point,data[point]);
+	point=index[point];
+}
+	return 0;
+}
