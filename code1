@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main(void) 
+{
+int NO[10],i;
+NO[0]=1;
+printf("NO[0]=%d\n",NO[0]);
+for(i=1;i<=9;i++)
+{
+NO[i]=2*NO[i-1];
+printf("NO[%d]=%d\n",i,NO[i]);
+}
+	return 0;
+}
